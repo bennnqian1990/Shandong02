@@ -1,0 +1,1184 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>华泰证券山东分公司 · 行业动态与人力资源策略周报 · 第23周</title>
+<style>
+  :root {
+    --primary: #0f2b46;
+    --primary-light: #1a4a7a;
+    --primary-gradient-start: #0a1628;
+    --primary-gradient-end: #1a4a7a;
+    --accent: #c8102e;
+    --accent-light: #e8384f;
+    --bg: #f0f2f5;
+    --card: #ffffff;
+    --text: #1a202c;
+    --text-light: #718096;
+    --border: #e2e8f0;
+    --success: #38a169;
+    --warning: #d69e2e;
+    --danger: #e53e3e;
+    --tag-bg: #ebf4ff;
+    --tag-text: #2b6cb0;
+    --tag-warning-bg: #fefcbf;
+    --tag-warning-text: #975a16;
+    --tag-danger-bg: #fed7d7;
+    --tag-danger-text: #c53030;
+    --shadow-sm: 0 1px 3px rgba(0,0,0,0.04), 0 1px 2px rgba(0,0,0,0.06);
+    --shadow-md: 0 4px 6px rgba(0,0,0,0.04), 0 2px 4px rgba(0,0,0,0.06);
+    --shadow-lg: 0 10px 25px rgba(0,0,0,0.06), 0 4px 10px rgba(0,0,0,0.04);
+    --radius-sm: 8px;
+    --radius-md: 12px;
+    --radius-lg: 16px;
+  }
+  html { scroll-behavior: smooth; }
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body {
+    font-family: -apple-system, "PingFang SC", "SF Pro Display", "Microsoft YaHei", "Helvetica Neue", Arial, sans-serif;
+    background: var(--bg);
+    color: var(--text);
+    line-height: 1.75;
+    font-size: 15px;
+    padding-top: 56px;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+  .container { max-width: 1200px; margin: 0 auto; padding: 24px; }
+
+  /* ====== 固定导航菜单栏 ====== */
+  .nav-bar {
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    background: linear-gradient(135deg, var(--primary-gradient-start) 0%, var(--primary-gradient-end) 100%);
+    backdrop-filter: blur(20px);
+    -webkit-backdrop-filter: blur(20px);
+    box-shadow: 0 4px 20px rgba(0,0,0,0.15), 0 1px 3px rgba(0,0,0,0.1);
+    margin-bottom: 28px;
+  }
+  .nav-inner {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding: 0;
+  }
+  .nav-item {
+    display: flex;
+    align-items: center;
+    gap: 7px;
+    color: rgba(255,255,255,0.55);
+    text-decoration: none;
+    font-size: 13.5px;
+    font-weight: 500;
+    padding: 16px 20px;
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    border-bottom: 3px solid transparent;
+    cursor: pointer;
+    white-space: nowrap;
+    position: relative;
+    letter-spacing: 0.3px;
+  }
+  .nav-item:hover {
+    color: rgba(255,255,255,0.85);
+    background: rgba(255,255,255,0.08);
+  }
+  .nav-item.active {
+    color: #ffffff;
+    border-bottom-color: var(--accent-light);
+    background: rgba(255,255,255,0.1);
+    text-shadow: 0 0 20px rgba(255,255,255,0.15);
+  }
+  .nav-item .nav-icon { font-size: 16px; flex-shrink: 0; }
+  .nav-item .nav-num { font-size: 11px; opacity: 0.6; margin-right: 2px; }
+
+  /* ====== Header ====== */
+  .report-header {
+    background: linear-gradient(135deg, var(--primary-gradient-start) 0%, var(--primary-light) 50%, #0d3a5e 100%);
+    color: white;
+    padding: 48px 48px 36px;
+    border-radius: var(--radius-lg);
+    margin-bottom: 0;
+    position: relative;
+    overflow: hidden;
+    box-shadow: var(--shadow-lg);
+  }
+  .report-header::before {
+    content: '';
+    position: absolute;
+    top: -80%;
+    right: -5%;
+    width: 500px;
+    height: 500px;
+    background: radial-gradient(circle, rgba(255,255,255,0.06) 0%, transparent 70%);
+    border-radius: 50%;
+  }
+  .report-header::after {
+    content: '';
+    position: absolute;
+    bottom: -40%;
+    left: -8%;
+    width: 350px;
+    height: 350px;
+    background: radial-gradient(circle, rgba(200,16,46,0.08) 0%, transparent 70%);
+    border-radius: 50%;
+  }
+  .report-header .header-accent-line {
+    position: absolute;
+    top: 0; left: 0; right: 0;
+    height: 3px;
+    background: linear-gradient(90deg, var(--accent), var(--accent-light), var(--warning), var(--accent));
+    background-size: 200% 100%;
+    animation: gradientSlide 4s ease infinite;
+  }
+  @keyframes gradientSlide {
+    0%, 100% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+  }
+  .header-top {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    position: relative;
+    z-index: 1;
+  }
+  .header-logo {
+    font-size: 13px;
+    font-weight: 600;
+    background: rgba(255,255,255,0.12);
+    backdrop-filter: blur(10px);
+    padding: 5px 16px;
+    border-radius: 20px;
+    letter-spacing: 1.5px;
+    border: 1px solid rgba(255,255,255,0.15);
+  }
+  .header-week {
+    font-size: 13px;
+    opacity: 0.8;
+    background: rgba(200,16,46,0.25);
+    padding: 4px 14px;
+    border-radius: 16px;
+    border: 1px solid rgba(200,16,46,0.3);
+  }
+  .header-title {
+    font-size: 30px;
+    font-weight: 800;
+    margin: 20px 0 10px;
+    position: relative;
+    z-index: 1;
+    letter-spacing: 3px;
+    background: linear-gradient(135deg, #ffffff 0%, #e2e8f0 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+  }
+  .header-subtitle {
+    font-size: 14px;
+    opacity: 0.65;
+    position: relative;
+    z-index: 1;
+    letter-spacing: 0.5px;
+  }
+  .header-meta {
+    display: flex;
+    gap: 32px;
+    margin-top: 24px;
+    padding-top: 18px;
+    border-top: 1px solid rgba(255,255,255,0.15);
+    position: relative;
+    z-index: 1;
+    flex-wrap: wrap;
+  }
+  .meta-item { font-size: 13px; opacity: 0.75; }
+  .meta-item strong { opacity: 1; font-weight: 600; }
+
+  /* ====== Section ====== */
+  .section {
+    background: var(--card);
+    border-radius: var(--radius-md);
+    padding: 32px 36px;
+    margin-bottom: 22px;
+    box-shadow: var(--shadow-md);
+    border: 1px solid rgba(226,232,240,0.8);
+    transition: box-shadow 0.3s ease;
+    opacity: 0;
+    transform: translateY(16px);
+    animation: sectionFadeIn 0.5s ease forwards;
+  }
+  .section:nth-child(1) { animation-delay: 0.05s; }
+  .section:nth-child(2) { animation-delay: 0.1s; }
+  .section:nth-child(3) { animation-delay: 0.15s; }
+  .section:nth-child(4) { animation-delay: 0.2s; }
+  .section:nth-child(5) { animation-delay: 0.25s; }
+  .section:nth-child(6) { animation-delay: 0.3s; }
+  @keyframes sectionFadeIn { to { opacity: 1; transform: translateY(0); } }
+  .section:hover { box-shadow: var(--shadow-lg); }
+  .section-title {
+    font-size: 21px;
+    font-weight: 700;
+    color: var(--primary);
+    margin-bottom: 24px;
+    padding-bottom: 14px;
+    border-bottom: 2px solid var(--primary);
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    position: relative;
+  }
+  .section-title::after {
+    content: '';
+    position: absolute;
+    bottom: -2px; left: 0;
+    width: 60px; height: 2px;
+    background: var(--accent);
+  }
+  .section-title .icon {
+    width: 36px; height: 36px;
+    background: linear-gradient(135deg, var(--primary) 0%, var(--primary-light) 100%);
+    color: white;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 16px;
+    flex-shrink: 0;
+    box-shadow: 0 2px 8px rgba(15,43,70,0.25);
+  }
+
+  /* ====== Subsection ====== */
+  .subsection { margin-bottom: 26px; }
+  .subsection:last-child { margin-bottom: 0; }
+  .subsection-title {
+    font-size: 16px;
+    font-weight: 600;
+    color: var(--primary-light);
+    margin-bottom: 14px;
+    padding-left: 14px;
+    border-left: 3px solid var(--accent);
+    line-height: 1.5;
+  }
+  .subsection-title .badge {
+    display: inline-block;
+    background: linear-gradient(135deg, var(--accent) 0%, var(--accent-light) 100%);
+    color: white;
+    font-size: 11px;
+    padding: 2px 10px;
+    border-radius: 12px;
+    margin-left: 8px;
+    font-weight: 600;
+    vertical-align: middle;
+    box-shadow: 0 1px 4px rgba(200,16,46,0.25);
+  }
+
+  /* ====== Tags ====== */
+  .tag {
+    display: inline-block;
+    font-size: 12px;
+    padding: 2px 10px;
+    border-radius: 12px;
+    margin: 2px 4px 2px 0;
+    font-weight: 500;
+    transition: transform 0.15s;
+  }
+  .tag:hover { transform: scale(1.03); }
+  .tag-blue { background: var(--tag-bg); color: var(--tag-text); }
+  .tag-warning { background: var(--tag-warning-bg); color: var(--tag-warning-text); }
+  .tag-danger { background: var(--tag-danger-bg); color: var(--tag-danger-text); }
+  .tag-success { background: #c6f6d5; color: #276749; }
+  .tag-highlight { background: #bee3f8; color: #2a4365; }
+
+  /* ====== News items ====== */
+  .news-list { list-style: none; }
+  .news-item {
+    padding: 14px 18px;
+    border-radius: var(--radius-sm);
+    margin-bottom: 10px;
+    background: linear-gradient(135deg, #fafbfc 0%, #f7f8fa 100%);
+    border-left: 3px solid var(--primary-light);
+    transition: all 0.2s ease;
+    border: 1px solid transparent;
+  }
+  .news-item:hover {
+    background: linear-gradient(135deg, #f0f4f8 0%, #eef2f6 100%);
+    border-color: var(--border);
+    border-left-color: var(--primary-light);
+    transform: translateX(2px);
+  }
+  .news-item.danger { border-left-color: var(--danger); background: linear-gradient(135deg, #fffbfb 0%, #fff5f5 100%); }
+  .news-item.warning { border-left-color: var(--warning); background: linear-gradient(135deg, #fffefa 0%, #fffdf5 100%); }
+  .news-item.success { border-left-color: var(--success); background: linear-gradient(135deg, #f7fff9 0%, #f0fff4 100%); }
+  .news-source { font-size: 12px; color: var(--text-light); margin-top: 6px; padding-left: 2px; }
+  .news-source a { color: var(--text-light); text-decoration: none; transition: color 0.2s; }
+  .news-source a:hover { color: var(--primary-light); text-decoration: underline; }
+  .news-date { font-size: 12px; color: var(--text-light); margin-right: 8px; font-weight: 500; }
+
+  /* ====== News links ====== */
+  .news-link { color: var(--primary); text-decoration: none; transition: all 0.2s ease; border-bottom: 1px solid transparent; }
+  .news-link:hover { color: var(--accent); border-bottom-color: var(--accent); }
+  .news-link::after { content: " \2197"; font-size: 11px; opacity: 0.4; margin-left: 2px; transition: opacity 0.2s; }
+  .news-link:hover::after { opacity: 0.7; }
+
+  /* ====== Tables ====== */
+  .table-wrapper {
+    overflow-x: auto;
+    border-radius: var(--radius-sm);
+    border: 1px solid var(--border);
+    margin: 14px 0;
+    box-shadow: var(--shadow-sm);
+  }
+  table { width: 100%; border-collapse: collapse; font-size: 14px; }
+  thead { background: linear-gradient(135deg, var(--primary) 0%, var(--primary-light) 100%); color: white; }
+  thead th { padding: 13px 16px; text-align: left; font-weight: 600; font-size: 13px; white-space: nowrap; letter-spacing: 0.3px; }
+  tbody td { padding: 11px 16px; border-bottom: 1px solid var(--border); vertical-align: top; }
+  tbody tr:nth-child(even) { background: #fafbfc; }
+  tbody tr:hover { background: #edf2f7; }
+  tbody tr:last-child td { border-bottom: none; }
+  .city-group { background: linear-gradient(135deg, var(--primary) 0%, var(--primary-light) 100%); color: white; font-weight: 600; font-size: 13px; }
+  .city-group td { padding: 10px 16px; }
+
+  /* ====== KPI Cards ====== */
+  .kpi-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 16px; margin: 18px 0; }
+  .kpi-card {
+    background: var(--card);
+    border-radius: var(--radius-sm);
+    padding: 20px;
+    text-align: center;
+    border: 1px solid var(--border);
+    box-shadow: var(--shadow-sm);
+    transition: all 0.25s ease;
+    position: relative;
+    overflow: hidden;
+  }
+  .kpi-card::before { content: ''; position: absolute; top: 0; left: 0; right: 0; height: 3px; background: linear-gradient(90deg, var(--primary), var(--primary-light)); }
+  .kpi-card:hover { transform: translateY(-2px); box-shadow: var(--shadow-lg); border-color: rgba(26,74,122,0.15); }
+  .kpi-value { font-size: 26px; font-weight: 800; color: var(--primary); letter-spacing: -0.5px; }
+  .kpi-value.up { color: var(--danger); }
+  .kpi-value.down { color: var(--success); }
+  .kpi-label { font-size: 12px; color: var(--text-light); margin-top: 6px; font-weight: 500; }
+  .kpi-change { font-size: 12px; margin-top: 3px; font-weight: 500; }
+  .kpi-change.up { color: var(--danger); }
+  .kpi-change.down { color: var(--success); }
+
+  /* ====== Shandong highlight ====== */
+  .sd-highlight {
+    background: linear-gradient(135deg, #fffdf7 0%, #fef9e7 50%, #fef3c7 100%);
+    border: 1px solid #f59e0b;
+    border-radius: var(--radius-sm);
+    padding: 22px 26px;
+    margin: 18px 0;
+    box-shadow: 0 2px 8px rgba(245,158,11,0.08);
+  }
+  .sd-highlight .sd-title { font-size: 15px; font-weight: 600; color: #92400e; margin-bottom: 12px; display: flex; align-items: center; gap: 6px; }
+  .sd-box {
+    background: var(--card);
+    border: 1px solid var(--border);
+    border-radius: var(--radius-sm);
+    padding: 18px 22px;
+    margin-bottom: 12px;
+    box-shadow: var(--shadow-sm);
+    transition: all 0.2s ease;
+  }
+  .sd-box:hover { box-shadow: var(--shadow-md); border-color: rgba(226,232,240,0.9); }
+  .sd-tag { display: inline-block; font-size: 11px; padding: 2px 8px; border-radius: 10px; margin-bottom: 8px; font-weight: 600; }
+
+  /* ====== Warning box ====== */
+  .warning-box {
+    background: linear-gradient(135deg, #fff5f5 0%, #fee2e2 50%, #fed7d7 100%);
+    border: 1px solid var(--danger);
+    border-radius: var(--radius-sm);
+    padding: 18px 22px;
+    margin: 14px 0;
+    box-shadow: 0 2px 8px rgba(229,62,62,0.06);
+  }
+  .warning-box .wb-title { font-weight: 700; color: var(--danger); margin-bottom: 10px; font-size: 14px; display: flex; align-items: center; gap: 6px; }
+
+  /* ====== Insight box ====== */
+  .insight-box {
+    background: linear-gradient(135deg, #f0fff4 0%, #c6f6d5 100%);
+    border: 1px solid var(--success);
+    border-radius: var(--radius-sm);
+    padding: 16px 20px;
+    margin: 12px 0;
+    font-size: 14px;
+    line-height: 1.7;
+  }
+
+  /* ====== Suggestion cards ====== */
+  .suggestion-list { list-style: none; }
+  .suggestion-item {
+    display: flex; gap: 16px; padding: 18px 20px; margin-bottom: 12px;
+    background: linear-gradient(135deg, #fafbfc 0%, #f5f7fa 100%);
+    border-radius: var(--radius-sm);
+    border: 1px solid var(--border);
+    align-items: flex-start;
+    transition: all 0.2s ease;
+    box-shadow: var(--shadow-sm);
+  }
+  .suggestion-item:hover { box-shadow: var(--shadow-md); border-color: rgba(26,74,122,0.12); transform: translateX(3px); }
+  .suggestion-num {
+    width: 34px; height: 34px;
+    background: linear-gradient(135deg, var(--primary) 0%, var(--primary-light) 100%);
+    color: white; border-radius: 50%;
+    display: flex; align-items: center; justify-content: center;
+    font-size: 14px; font-weight: 700; flex-shrink: 0;
+    box-shadow: 0 2px 6px rgba(15,43,70,0.2);
+  }
+  .suggestion-text h4 { font-size: 15px; color: var(--primary); margin-bottom: 6px; font-weight: 600; }
+  .suggestion-text p { font-size: 13px; color: var(--text-light); line-height: 1.7; }
+
+  /* ====== Footer ====== */
+  .report-footer { text-align: left; padding: 24px; color: var(--text-light); font-size: 12px; border-radius: var(--radius-md); background: var(--card); border: 1px solid var(--border); box-shadow: var(--shadow-sm); margin-top: 32px; }
+
+  /* ====== Source link ====== */
+  .src-link { color: var(--primary-light); text-decoration: none; font-size: 12px; }
+  .src-link:hover { text-decoration: underline; color: var(--accent); }
+  .src-link::after { content: " \2197"; font-size: 10px; opacity: 0.5; }
+
+  /* ====== Responsive ====== */
+  @media (max-width: 768px) {
+    body { padding-top: 48px; }
+    .container { padding: 14px; }
+    .report-header { padding: 28px 22px; }
+    .header-title { font-size: 22px; letter-spacing: 1px; }
+    .section { padding: 22px 18px; }
+    .kpi-grid { grid-template-columns: repeat(2, 1fr); }
+    .header-meta { gap: 16px; }
+    .nav-inner { overflow-x: auto; justify-content: flex-start; }
+    .nav-item { padding: 12px 14px; font-size: 12px; }
+    .nav-item .nav-icon { display: none; }
+    .nav-item .nav-num { display: none; }
+    .subsection-title { font-size: 15px; }
+  }
+
+  /* ====== Print ====== */
+  @media print {
+    body { background: white; padding-top: 0; -webkit-print-color-adjust: exact; print-color-adjust: exact; }
+    .section { box-shadow: none; break-inside: avoid; animation: none; opacity: 1; transform: none; }
+    .report-header { -webkit-print-color-adjust: exact; print-color-adjust: exact; }
+    .nav-bar { position: static; }
+    .kpi-card { box-shadow: none; }
+    .report-header .header-accent-line { animation: none; }
+  }
+
+  /* ====== Custom scrollbar ====== */
+  ::-webkit-scrollbar { width: 8px; height: 8px; }
+  ::-webkit-scrollbar-track { background: var(--bg); }
+  ::-webkit-scrollbar-thumb { background: #cbd5e0; border-radius: 4px; }
+  ::-webkit-scrollbar-thumb:hover { background: #a0aec0; }
+</style>
+</head>
+<body>
+
+<!-- ==================== 固定导航菜单栏 ==================== -->
+<nav class="nav-bar" id="navBar">
+  <div class="nav-inner">
+    <a href="#section-industry" class="nav-item active" data-section="section-industry">
+      <span class="nav-icon">&#x1F4CA;</span><span class="nav-num">壹</span>行业动态
+    </a>
+    <a href="#section-regulation" class="nav-item" data-section="section-regulation">
+      <span class="nav-icon">&#x1F6D1;</span><span class="nav-num">贰</span>监管动态
+    </a>
+    <a href="#section-personnel" class="nav-item" data-section="section-personnel">
+      <span class="nav-icon">&#x1F465;</span><span class="nav-num">叁</span>人员动态
+    </a>
+    <a href="#section-wealth" class="nav-item" data-section="section-wealth">
+      <span class="nav-icon">&#x1F4B0;</span><span class="nav-num">肆</span>财富管理
+    </a>
+    <a href="#section-hr-policy" class="nav-item" data-section="section-hr-policy">
+      <span class="nav-icon">&#x1F4DD;</span><span class="nav-num">伍</span>山东HR政策
+    </a>
+    <a href="#section-suggestions" class="nav-item" data-section="section-suggestions">
+      <span class="nav-icon">&#x1F4A1;</span><span class="nav-num">陆</span>HR建议
+    </a>
+  </div>
+</nav>
+
+<div class="container">
+
+  <!-- ==================== 报告头部 ==================== -->
+  <div class="report-header">
+    <div class="header-accent-line"></div>
+    <div class="header-top">
+      <span class="header-logo">HUATAI SECURITIES · 山东分公司</span>
+      <span class="header-week">第23周 · 2026年</span>
+    </div>
+    <h1 class="header-title">行业动态与人力资源策略周报</h1>
+    <p class="header-subtitle">涵盖行业经营动态、监管政策、人才市场、区域竞争情报与HR策略建议</p>
+    <div class="header-meta">
+      <span class="meta-item">报告周期：<strong>2026年6月2日 — 2026年6月7日</strong></span>
+      <span class="meta-item">编制部门：<strong>华泰证券山东分公司</strong></span>
+      <span class="meta-item">生成日期：<strong>2026年6月8日</strong></span>
+      <span class="meta-item">密级：<strong>内部参阅</strong></span>
+    </div>
+  </div>
+
+  <!-- ==================== 第一部分：行业动态 ==================== -->
+  <div class="section" id="section-industry">
+    <h2 class="section-title"><span class="icon">壹</span>行业动态</h2>
+
+    <!-- 1.1 券商/基金大事要闻 -->
+    <div class="subsection">
+      <div class="subsection-title">1.1 券商与基金行业大事要闻 <span class="badge">本周重点</span></div>
+      <ul class="news-list">
+        <li class="news-item success">
+          <div>
+            <span class="news-date">2026-06-05</span>
+            <span class="tag tag-success">政策利好</span>
+            <a href="https://finance.sina.com.cn/roll/2026-06-08/doc-iniaruxy5792500.shtml" class="news-link" target="_blank">国务院办公厅发布私募基金"顶层设计"——《关于加强监管防范风险促进私募投资基金高质量发展的指导意见》</a>
+          </div>
+          <div class="news-source">作为私募基金领域"1+N+X"政策体系纲领性文件，围绕源头防控、全面监管、风险处置、规范发展等六大板块推出<strong>18项举措</strong>，核心逻辑为"该出的出、该进的进"，同时差异化扶持创投基金，培育耐心资本。截至2026年4月底，私募基金管理规模达<strong>23.46万亿元</strong>，管理人共18792家。<br>来源：<a href="https://finance.sina.com.cn/roll/2026-06-08/doc-iniaruxy5792500.shtml" target="_blank" class="src-link">新浪财经</a>、<a href="https://www.chinanews.com.cn/cj/2026/06-05/10634962.shtml" target="_blank" class="src-link">中新网</a></div>
+        </li>
+        <li class="news-item warning">
+          <div>
+            <span class="news-date">2026-06-04</span>
+            <span class="tag tag-warning">监管整改</span>
+            <a href="http://k.sina.com.cn/article_7857201856_1d45362c001906dfui.html" class="news-link" target="_blank">三大交易所联合启动券商交易业务单元专项整改，严禁为个别投资者提供VIP专属交易通道</a>
+          </div>
+          <div class="news-source">存量不合规通道须在<strong>3个月内</strong>整改完毕，旨在抹平机构与散户在交易速度上的"起跑线不公"，直接修复因制度差异受损的散户投资信心。<br>来源：<a href="http://k.sina.com.cn/article_7857201856_1d45362c001906dfui.html" target="_blank" class="src-link">新浪财经</a></div>
+        </li>
+        <li class="news-item">
+          <div>
+            <span class="news-date">2026-06-03</span>
+            <span class="tag tag-blue">行业动向</span>
+            <a href="https://baijiahao.baidu.com/s?id=1867115099933965687" class="news-link" target="_blank">头部券商密集发布2026年度提质增效方案，锚定投行提质、控薪增效、分红提升三大方向</a>
+          </div>
+          <div class="news-source">中信证券2025年现金分红103.74亿元（占净利润35.73%），国泰海通分红加回购总额100亿元（占扣非归母净利润47%），华泰证券分红49.65亿元（占母公司净利润47.17%）。<br>来源：<a href="https://baijiahao.baidu.com/s?id=1867115099933965687" target="_blank" class="src-link">百度百家号</a></div>
+        </li>
+        <li class="news-item">
+          <div>
+            <span class="news-date">2026-06-01</span>
+            <span class="tag tag-blue">监管新规</span>
+            <a href="http://www.csrc.gov.cn/shanxi/c106408/c7608112/content.shtml" class="news-link" target="_blank">证监会《证券期货市场监督管理措施实施办法》将于2026年6月30日起正式施行</a>
+          </div>
+          <div class="news-source">进一步规范监管措施实施程序，坚持监管措施及时矫正功能，独立于行政处罚的行政措施类型，具有保护公共利益、及时矫正违法行为的功能。<br>来源：<a href="http://www.csrc.gov.cn/shanxi/" target="_blank" class="src-link">证监会</a></div>
+        </li>
+        <li class="news-item">
+          <div>
+            <span class="news-date">2026-06-05</span>
+            <span class="tag tag-blue">深交所</span>
+            <a href="https://m.cnfin.com/kx/zixun/20260605/4422774_1.html" class="news-link" target="_blank">深交所：6月1日—6月5日对199起证券异常交易行为采取自律监管措施</a>
+          </div>
+          <div class="news-source">涉及盘中拉抬打压、虚假申报等异常交易情形；共对3起上市公司重大事项进行核查，并上报证监会4起涉嫌违法违规案件线索。<br>来源：<a href="https://m.cnfin.com/kx/zixun/20260605/4422774_1.html" target="_blank" class="src-link">中国金融网</a></div>
+        </li>
+      </ul>
+    </div>
+
+    <!-- 1.2 行业核心经营数据 -->
+    <div class="subsection">
+      <div class="subsection-title">1.2 行业核心经营数据</div>
+      <div class="kpi-grid">
+        <div class="kpi-card">
+          <div class="kpi-value up">3.22万亿</div>
+          <div class="kpi-label">沪深两市日均成交额</div>
+          <div class="kpi-change up">▲ 环比+5.55%</div>
+        </div>
+        <div class="kpi-card">
+          <div class="kpi-value up">2.94万亿</div>
+          <div class="kpi-label">两融余额</div>
+          <div class="kpi-change up">▲ 环比+1.59%</div>
+        </div>
+        <div class="kpi-card">
+          <div class="kpi-value">39.36万亿</div>
+          <div class="kpi-label">公募基金总规模（4月底）</div>
+          <div class="kpi-change up">再创历史新高</div>
+        </div>
+        <div class="kpi-card">
+          <div class="kpi-value up">72只</div>
+          <div class="kpi-label">本周新基金发行数量</div>
+          <div class="kpi-change up">▲ 环比+80%，创近301周新高</div>
+        </div>
+        <div class="kpi-card">
+          <div class="kpi-value">23.46万亿</div>
+          <div class="kpi-label">私募基金管理规模（4月底）</div>
+          <div class="kpi-change">管理人18792家</div>
+        </div>
+      </div>
+      <p style="font-size:12px;color:var(--text-light);margin-top:8px;">数据来源：<a href="https://baijiahao.baidu.com/s?id=1867165253645080301" target="_blank" class="src-link">百家号（Wind数据）</a>、<a href="https://finance.eastmoney.com/a/202606033759362854.html" target="_blank" class="src-link">东方财富</a>、<a href="https://www.sac.net.cn" target="_blank" class="src-link">中证协</a></p>
+    </div>
+
+    <!-- 1.3 山东专区经营数据 -->
+    <div class="subsection">
+      <div class="subsection-title">1.3 山东辖区证券经营数据概览 <span class="badge">山东专区</span></div>
+      <div class="sd-highlight">
+        <div class="sd-title">&#127881; 山东辖区关键指标</div>
+        <div class="table-wrapper">
+          <table>
+            <thead>
+              <tr>
+                <th>指标类型</th>
+                <th>数据内容</th>
+                <th>同期变化</th>
+                <th>来源</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>辖区证券公司数量</td>
+                <td>山东本地法人机构持续整合（光大证券已撤销山东分公司）</td>
+                <td>网点缩减趋势延续</td>
+                <td><a href="https://www.sac.net.cn" target="_blank" class="src-link">中证协</a></td>
+              </tr>
+              <tr>
+                <td>山东两融规模</td>
+                <td>全国两融余额2.94万亿，山东占比随行业增长同步提升</td>
+                <td>全国环比+1.59%</td>
+                <td><a href="http://www.csrc.gov.cn/shandong/" target="_blank" class="src-link">山东证监局</a></td>
+              </tr>
+              <tr>
+                <td>辖区监管动态</td>
+                <td>ST晨鸣收到山东证监局警示函（信息披露违规，6月5日）</td>
+                <td>监管趋严</td>
+                <td><a href="http://www.csrc.gov.cn/shandong/" target="_blank" class="src-link">山东证监局</a></td>
+              </tr>
+              <tr>
+                <td>华泰证券分红</td>
+                <td>2025年累计现金分红49.65亿元，占母公司净利润47.17%</td>
+                <td>同比提升</td>
+                <td><a href="https://www.htsc.com.cn" target="_blank" class="src-link">华泰官网</a></td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ==================== 第二部分：监管动态 ==================== -->
+  <div class="section" id="section-regulation">
+    <h2 class="section-title"><span class="icon">贰</span>监管动态</h2>
+
+    <!-- 2.1 监管政策 -->
+    <div class="subsection">
+      <div class="subsection-title">2.1 重要监管政策</div>
+      <ul class="news-list">
+        <li class="news-item success">
+          <div>
+            <span class="news-date">2026-06-05</span>
+            <span class="tag tag-success">重磅新规</span>
+            <a href="https://finance.sina.com.cn/roll/2026-06-08/doc-iniaruxy5792500.shtml" class="news-link" target="_blank">国务院发布私募基金监管顶层设计，18项举措覆盖全生命周期</a>
+          </div>
+          <div class="news-source">
+            文件要求：私募基金管理人须满足更严格的资质要求；强化信息披露义务；差异化扶持创投基金；建立健全风险处置机制。证监会称，2023年至2026年一季度已对<strong>1805家</strong>私募机构采取行政监管措施，对<strong>97家</strong>进行行政处罚。<br>
+            来源：<a href="https://www.chinanews.com.cn/cj/2026/06-05/10634962.shtml" target="_blank" class="src-link">中新网·证监会发言人答记者问</a>
+          </div>
+        </li>
+        <li class="news-item">
+          <div>
+            <span class="news-date">2026-06-04</span>
+            <span class="tag tag-warning">市场整治</span>
+            <a href="http://k.sina.com.cn/article_7857201856_1d45362c001906dfui.html" class="news-link" target="_blank">三大交易所要求券商3个月内整改VIP专属交易通道，禁止为机构提供速度优势</a>
+          </div>
+          <div class="news-source">核心内容：禁止为个别投资者提供专属高速交易路径；确保所有投资者在同等技术条件下参与交易；存量不合规通道须<strong>2026年9月前</strong>全部清零。<br>来源：<a href="http://k.sina.com.cn/article_7857201856_1d45362c001906dfui.html" target="_blank" class="src-link">新浪财经</a></div>
+        </li>
+        <li class="news-item">
+          <div>
+            <span class="news-date">2026-06-01起施行</span>
+            <span class="tag tag-blue">新规施行</span>
+            证监会《证券期货市场监督管理措施实施办法》（2026年6月30日施行）——规范监管措施程序，细化行政监管措施与行政处罚的适用边界
+          </div>
+          <div class="news-source">来源：<a href="http://www.csrc.gov.cn/shanxi/c106408/c7608112/content.shtml" target="_blank" class="src-link">证监会山西局转载原文</a></div>
+        </li>
+      </ul>
+    </div>
+
+    <!-- 2.2 处罚信息 -->
+    <div class="subsection">
+      <div class="subsection-title">2.2 本周行政处罚与监管措施</div>
+
+      <div class="warning-box">
+        <div class="wb-title">&#9888;&#65039; 东吴证券被央行处罚74.3万元（反洗钱违规）</div>
+        <p style="font-size:13px;margin-bottom:8px;"><strong>处罚机构：</strong>中国人民银行江苏省分行 &nbsp;|&nbsp; <strong>处罚日期：</strong>2026年6月1日 &nbsp;|&nbsp; <strong>文号：</strong>苏银罚决字〔2026〕18号</p>
+        <p style="font-size:13px;margin-bottom:8px;"><strong>违规事实：</strong>未按照规定开展客户尽职调查、未按照规定报告可疑交易。</p>
+        <p style="font-size:13px;margin-bottom:8px;"><strong>处罚结果：</strong>警告并罚款74.3万元，公示期限三年。</p>
+        <div class="insight-box">&#x1F4CB; <strong>HR解读与警示：</strong>反洗钱合规是证券从业人员的基本义务。合规部门应定期对一线员工开展客户尽调和可疑交易识别培训，确保操作规范到位，避免因制度执行不到位引发监管处罚。<br>来源：<a href="https://news.qq.com/rain/a/20260603A028KV00" target="_blank" class="src-link">腾讯新闻</a></div>
+      </div>
+
+      <div class="warning-box">
+        <div class="wb-title">&#9888;&#65039; *ST岭南收到广东证监局行政处罚事先告知书（信息披露违规）</div>
+        <p style="font-size:13px;margin-bottom:8px;"><strong>处罚机构：</strong>广东证监局 &nbsp;|&nbsp; <strong>公告日期：</strong>2026年6月2日</p>
+        <p style="font-size:13px;margin-bottom:8px;"><strong>违规事实：</strong>实控人资金占用、年报虚假记载、重大事项遗漏及逾期披露，违规情节严重，侵害中小投资者合法权益。</p>
+        <div class="insight-box">&#x1F4CB; <strong>HR解读：</strong>上市公司财务信息披露违规案件频发，提示合规培训不能仅停留于证券从业，相关业务条线HR亦需关注合作上市公司及客户的合规风险，做好尽职调查。<br>来源：<a href="https://www.sohu.com/a/1031946196_121209295" target="_blank" class="src-link">搜狐财经</a></div>
+      </div>
+
+      <!-- 2.3 山东专区监管 -->
+      <div class="subsection-title" style="margin-top:20px;">2.3 山东专区监管动态 <span class="badge">山东专区</span></div>
+      <div class="sd-highlight">
+        <div class="sd-title">&#127881; 山东证监局本周监管动态</div>
+        <div class="warning-box" style="margin:0;">
+          <div class="wb-title">&#9888;&#65039; ST晨鸣收到山东证监局警示函</div>
+          <p style="font-size:13px;margin-bottom:8px;"><strong>涉事主体：</strong>山东晨鸣纸业集团股份有限公司（ST晨鸣，000488.SZ）</p>
+          <p style="font-size:13px;margin-bottom:8px;"><strong>处罚日期：</strong>2026年6月5日 &nbsp;|&nbsp; <strong>处罚机构：</strong>中国证监会山东监管局</p>
+          <p style="font-size:13px;margin-bottom:8px;"><strong>违规事实：</strong>2019年至2024年，公司向5家关联方借款，未履行相应审议程序，未及时披露，也未在相关定期报告中予以披露，违反信息披露规定。</p>
+          <p style="font-size:13px;"><strong>处罚类型：</strong>对公司及相关责任人员出具警示函</p>
+          <div class="insight-box" style="margin-top:10px;">&#x1F4CB; <strong>山东HR解读：</strong>山东证监局本周出手处理本地上市公司关联交易信息披露违规，显示辖区监管趋严。华泰证券山东分公司应加强对客户尽职调查规范性及关联交易识别能力的培训，避免从业人员卷入客户违规案件。<br>来源：<a href="https://finance.sina.com.cn/stock/hkstock/ggscyd/2026-06-05/doc-iniakfhk2765097.shtml" target="_blank" class="src-link">新浪财经</a></div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ==================== 第三部分：人员动态 ==================== -->
+  <div class="section" id="section-personnel">
+    <h2 class="section-title"><span class="icon">叁</span>行业人员动态</h2>
+
+    <!-- 3.1 撤并新设 -->
+    <div class="subsection">
+      <div class="subsection-title">3.1 山东地区撤并新设汇总</div>
+      <div class="table-wrapper">
+        <table>
+          <thead>
+            <tr>
+              <th>变动类型</th>
+              <th>网点名称与地点</th>
+              <th>详情说明</th>
+              <th>HR关注点</th>
+              <th>日期</th>
+              <th>来源</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td><span class="tag tag-danger">撤销</span></td>
+              <td>光大证券山东分公司<br><span style="font-size:11px;color:var(--text-light)">山东省</span></td>
+              <td>光大证券为优化网点布局、加强资源整合，决定撤销山东分公司，推动分支机构高质量发展</td>
+              <td>关注离职员工动向，重点甄别优质客户经理；对接受光大证券转入客户可提前布局</td>
+              <td>2026-01-09公告</td>
+              <td><a href="https://paper.cnstock.com/html/2026-01/09/content_2168049.htm" target="_blank" class="src-link">中国证券报</a></td>
+            </tr>
+            <tr>
+              <td><span class="tag tag-warning">整合</span></td>
+              <td>辖区内部分中小券商营业部<br><span style="font-size:11px;color:var(--text-light)">山东省各城市</span></td>
+              <td>行业整合加速，中小券商持续缩减山东地区网点，省内券商竞争格局进一步向头部集中</td>
+              <td>人才流入窗口期，可针对性引进有客户资源的经验丰富客户经理</td>
+              <td>2026年1-6月持续</td>
+              <td><a href="https://www.sac.net.cn" target="_blank" class="src-link">中证协</a></td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+
+    <!-- 3.2 山东地区分支机构高管变更 -->
+    <div class="subsection">
+      <div class="subsection-title">3.2 山东地区分支机构高管变更</div>
+      <div class="table-wrapper">
+        <table>
+          <thead>
+            <tr>
+              <th>分支机构名称</th>
+              <th>所属券商</th>
+              <th>变更前负责人</th>
+              <th>变更后负责人</th>
+              <th>变更日期</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>华泰证券济南泉城路营业部</td>
+              <td>华泰证券</td>
+              <td>内部轮岗（待更新）</td>
+              <td>内部轮岗（待更新）</td>
+              <td>2026年6月</td>
+            </tr>
+            <tr>
+              <td>中信证券山东分公司</td>
+              <td>中信证券</td>
+              <td colspan="2" style="color:var(--text-light);font-size:13px;">本周暑期实习生招聘启动，负责人陈蓓蓓联系（15376665314），具体高管变更暂无公告</td>
+              <td>2026年6月</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+      <p style="font-size:12px;color:var(--text-light);margin-top:8px;">注：本周山东地区券商分支机构高管变更公告较少，如需精确数据请查阅<a href="https://www.diaifu.net" target="_blank" class="src-link">大爱付网（diaifu.net）</a>或<a href="http://www.csrc.gov.cn/shandong/" target="_blank" class="src-link">山东证监局官网</a>。</p>
+    </div>
+
+    <!-- 3.3 头部券商招聘动态 -->
+    <div class="subsection">
+      <div class="subsection-title">3.3 头部券商山东地区招聘动态 <span class="badge">重点城市</span></div>
+
+      <div class="table-wrapper">
+        <table>
+          <thead>
+            <tr>
+              <th>城市</th>
+              <th>券商</th>
+              <th>招聘岗位</th>
+              <th>岗位要求</th>
+              <th>招聘渠道</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr class="city-group">
+              <td colspan="5">&#x1F4CD; 济南</td>
+            </tr>
+            <tr>
+              <td>济南</td>
+              <td>中信证券（山东）</td>
+              <td>暑期实习生</td>
+              <td>在校本科/研究生，金融、经济类专业优先；联系人陈蓓蓓（15376665314）</td>
+              <td><a href="http://sd.citics.com/rczp/xyzp/202603/t20260302_1208506.html" target="_blank" class="src-link">中信证券山东官网</a></td>
+            </tr>
+            <tr>
+              <td>济南</td>
+              <td>国泰海通证券</td>
+              <td>综合类岗位</td>
+              <td>证券从业资格，有客户资源者优先，薪酬递延新制度（2026年临时股东会6月26日审议）</td>
+              <td><a href="https://www.liepin.com/city-jinan/zphaitongzhengquan/" target="_blank" class="src-link">猎聘济南</a></td>
+            </tr>
+            <tr class="city-group">
+              <td colspan="5">&#x1F4CD; 青岛</td>
+            </tr>
+            <tr>
+              <td>青岛</td>
+              <td>中信建投证券</td>
+              <td>投资顾问/财富管理</td>
+              <td>具备证券从业资格，有一定客户维护经验，关注买方投顾转型方向</td>
+              <td>BOSS直聘 / 猎聘</td>
+            </tr>
+            <tr>
+              <td>青岛</td>
+              <td>招商证券</td>
+              <td>综合管理/营销岗</td>
+              <td>本科及以上学历，金融相关专业，薪酬制度已按证监会要求进行修订</td>
+              <td>智联招聘</td>
+            </tr>
+            <tr class="city-group">
+              <td colspan="5">&#x1F4CD; 烟台 / 临沂 / 潍坊 / 莱阳</td>
+            </tr>
+            <tr>
+              <td>烟台</td>
+              <td>银河证券</td>
+              <td>客户经理/投顾</td>
+              <td>有证券从业经验，具备客户开发能力，烟台本地资源优先</td>
+              <td>BOSS直聘</td>
+            </tr>
+            <tr>
+              <td>临沂</td>
+              <td>广发证券</td>
+              <td>财富管理岗</td>
+              <td>证券从业资格，关注买方投顾业务转型，"ETF+投顾"方向积极布局</td>
+              <td>猎聘</td>
+            </tr>
+            <tr>
+              <td>潍坊</td>
+              <td>国信证券</td>
+              <td>营销/运营岗</td>
+              <td>本科及以上，金融/经济类专业</td>
+              <td>智联招聘</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+      <div class="insight-box" style="margin-top:14px;">
+        &#x1F4A1; <strong>本周招聘趋势：</strong>头部券商招聘呈现两大特点：①<strong>暑期实习生需求旺盛</strong>，中信证券山东分公司本周正式启动2026年暑期实习招聘；②<strong>薪酬制度改革影响招聘吸引力</strong>，中信证券、国泰海通、中信建投、招商证券等均披露薪酬追索扣回新制度，追索期限原则上与风险损失发生期限一致，且覆盖离职退休人员，可能影响部分资深从业人员的求职意愿，需在招聘沟通中做好预期管理。
+      </div>
+    </div>
+  </div>
+
+  <!-- ==================== 第四部分：财富管理专项 ==================== -->
+  <div class="section" id="section-wealth">
+    <h2 class="section-title"><span class="icon">肆</span>财富管理专项</h2>
+
+    <!-- 4.1 行业要闻 -->
+    <div class="subsection">
+      <div class="subsection-title">4.1 财富管理行业要闻</div>
+      <ul class="news-list">
+        <li class="news-item success">
+          <div>
+            <span class="news-date">2026-06-06</span>
+            <span class="tag tag-success">重大突破</span>
+            <a href="http://finance.sina.com.cn/jjxw/2026-06-06/doc-iniamtiw7686462.shtml" class="news-link" target="_blank">基金投顾试点转常规进入倒计时，券商买方转型大提速，"ETF+投顾"成确定性增量突破口</a>
+          </div>
+          <div class="news-source">多家券商通过服务模式搭建、产品创新等路径加速布局基金投顾业务。2026年4月，证监会已允许基金投顾配置创业板ETF，并推出盘后固定价格交易机制等配套安排。业内预计，试点转常规将加剧行业竞争，但制度红利和居民财富配置需求为长期增长奠定基础。<br>来源：<a href="http://finance.sina.com.cn/jjxw/2026-06-06/doc-iniamtiw7686462.shtml" target="_blank" class="src-link">新华财经</a></div>
+        </li>
+        <li class="news-item">
+          <div>
+            <span class="news-date">2026-06-01</span>
+            <span class="tag tag-blue">发行热潮</span>
+            <a href="https://finance.eastmoney.com/a/202606033759362854.html" class="news-link" target="_blank">公募基金单周发行72只，创近301周新高，权益类基金主导，科技赛道吸金能力强劲</a>
+          </div>
+          <div class="news-source">据公募排排网统计，本周（6月1日—6月7日）全市场共有72只基金开启募集，环比大增80%，连续5周站上40只关口。权益类基金为本轮发行主力，科技赛道吸金能力持续强劲，反映出公募机构对后市结构性行情的积极预判。<br>来源：<a href="https://finance.eastmoney.com/a/202606033759362854.html" target="_blank" class="src-link">东方财富</a></div>
+        </li>
+        <li class="news-item">
+          <div>
+            <span class="news-date">2026-04月底</span>
+            <span class="tag tag-blue">规模新高</span>
+            公募基金总规模突破39.36万亿元，再创历史新高；货基、债基规模涨超1万亿
+          </div>
+          <div class="news-source">据中基协数据，股票型基金和混合型基金规模虽有增加，但份额减少——背后是部分基民借行情向好解套赎回。<br>来源：<a href="https://caifuhao.eastmoney.com/news/1717785100" target="_blank" class="src-link">东方财富·财富号</a></div>
+        </li>
+      </ul>
+    </div>
+
+    <!-- 4.2 核心经营数据 -->
+    <div class="subsection">
+      <div class="subsection-title">4.2 财富管理核心经营数据</div>
+      <div class="kpi-grid">
+        <div class="kpi-card">
+          <div class="kpi-value">39.36万亿</div>
+          <div class="kpi-label">公募基金总规模</div>
+          <div class="kpi-change up">▲ 历史新高</div>
+        </div>
+        <div class="kpi-card">
+          <div class="kpi-value up">72只</div>
+          <div class="kpi-label">本周新基金发行数</div>
+          <div class="kpi-change up">▲ 近301周新高</div>
+        </div>
+        <div class="kpi-card">
+          <div class="kpi-value up">2.94万亿</div>
+          <div class="kpi-label">两融余额</div>
+          <div class="kpi-change up">▲ 环比+1.59%</div>
+        </div>
+        <div class="kpi-card">
+          <div class="kpi-value">23.46万亿</div>
+          <div class="kpi-label">私募基金管理规模</div>
+          <div class="kpi-change">管理人18792家</div>
+        </div>
+      </div>
+    </div>
+
+    <!-- 4.3 头部券商财富管理布局 -->
+    <div class="subsection">
+      <div class="subsection-title">4.3 头部券商财富管理战略布局</div>
+      <div class="sd-box">
+        <span class="sd-tag tag-blue">中信证券</span>
+        <p style="font-size:14px;">持续推进买方投顾业务，配合基金投顾试点转常规趋势，加速构建"资产配置+专业陪伴"服务体系；2025年现金分红103.74亿元，资本实力雄厚。</p>
+      </div>
+      <div class="sd-box">
+        <span class="sd-tag tag-warning">国泰海通证券</span>
+        <p style="font-size:14px;">6月26日召开临时股东大会，审议新版薪酬管理制度，强调与提质增效目标挂钩；分红加回购总额100亿元，展示财富管理盈利能力。</p>
+      </div>
+      <div class="sd-box">
+        <span class="sd-tag tag-success">华泰证券</span>
+        <p style="font-size:14px;">2025年现金分红49.65亿元，占母公司净利润47.17%；持续布局数字化财富管理，积极拥抱基金投顾试点转常规带来的市场机遇。</p>
+      </div>
+      <div class="sd-box">
+        <span class="sd-tag tag-blue">广发证券</span>
+        <p style="font-size:14px;">以买方投顾为抓手加速财富管理转型，2025年基金投顾保有规模持续增长，ETF+投顾作为核心增量突破口，在山东地区积极布局。</p>
+      </div>
+    </div>
+
+    <!-- 4.4 山东专区 -->
+    <div class="subsection">
+      <div class="subsection-title">4.4 山东专区财富管理动态 <span class="badge">山东专区</span></div>
+      <div class="sd-highlight">
+        <div class="sd-title">&#127881; 山东财富管理市场要点</div>
+        <ul class="news-list">
+          <li class="news-item" style="background:white;">
+            <span class="tag tag-success">基金投顾</span>
+            基金投顾试点转常规信号明确，山东各主要城市的券商营业部正积极布局投顾服务，重点推进ETF配置建议和基金组合服务。
+          </li>
+          <li class="news-item" style="background:white;">
+            <span class="tag tag-blue">居民理财</span>
+            公募基金规模持续走高（39.36万亿），山东居民财富配置向权益类资产迁移趋势强化，本地券商财富管理业务承压与机遇并存。
+          </li>
+          <li class="news-item" style="background:white;">
+            <span class="tag tag-warning">私募监管</span>
+            国务院私募新规落地，山东地区私募机构合规压力上升，部分私募高净值客户需求将转移至公募和券商财富管理服务。
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+
+  <!-- ==================== 第五部分：山东HR政策 ==================== -->
+  <div class="section" id="section-hr-policy">
+    <h2 class="section-title"><span class="icon">伍</span>山东HR政策</h2>
+
+    <!-- 省级 -->
+    <div class="subsection">
+      <div class="subsection-title">5.1 省级政策</div>
+      <ul class="news-list">
+        <li class="news-item success">
+          <div>
+            <span class="tag tag-success">重磅政策</span>
+            <a href="https://mp.weixin.qq.com/s?__biz=MjM5NTQ3ODU4MA==&mid=2649893966&idx=3&sn=1cb87deb6420d212ab184dc5d795ea86" class="news-link" target="_blank">山东省教育厅、省人社厅联合发布《2026年就业创业政策地图》</a>
+          </div>
+          <div class="news-source">
+            覆盖<strong>8大核心内容</strong>：企业吸纳就业补贴、就业见习、基层就业激励、自主创业扶持、灵活就业保障、就业服务、困难帮扶、职业培训补贴，面向高校毕业生提供一站式政策指引。<br>
+            <strong>HR应用建议：</strong>关注高校毕业生吸纳补贴政策，合理测算用人成本优化，优先对接应届生培育体系。<br>
+            来源：<a href="https://mp.weixin.qq.com/s?__biz=MjM5NTQ3ODU4MA==&mid=2649893966&idx=3&sn=1cb87deb6420d212ab184dc5d795ea86" target="_blank" class="src-link">山东人社公众号</a>
+          </div>
+        </li>
+        <li class="news-item">
+          <div>
+            <span class="tag tag-blue">灵活就业</span>
+            <a href="https://fpkfb.shandong.gov.cn/resource/srst/att/202603/cf62d44e-ffc3-463a-b33b-2b78de4feab1.pdf" class="news-link" target="_blank">《山东省灵活就业参保"一件事"工作实施方案》（2026年3月）</a>
+          </div>
+          <div class="news-source">推进灵活就业人员社保参保"一件事"便利化改革，降低灵活就业人员参保门槛，对证券行业离职返聘、兼职顾问等灵活用工人员管理有直接参考价值。<br>来源：<a href="https://fpkfb.shandong.gov.cn/resource/srst/att/202603/cf62d44e-ffc3-463a-b33b-2b78de4feab1.pdf" target="_blank" class="src-link">山东省政府官网</a></div>
+        </li>
+        <li class="news-item">
+          <div>
+            <span class="tag tag-blue">工作部署</span>
+            <a href="https://hrss.shandong.gov.cn/resource/srst/att/202603/d4724e88-217c-4243-93e3-49eef2b63cbc.pdf" class="news-link" target="_blank">《2026年全省人力资源和社会保障工作要点》（省人社厅，2026年2月）</a>
+          </div>
+          <div class="news-source">明确2026年全省人社工作核心任务，包括：强化重点群体就业、推进技能人才队伍建设、完善社会保障体系。<br>来源：<a href="https://hrss.shandong.gov.cn" target="_blank" class="src-link">山东省人社厅官网</a></div>
+        </li>
+        <li class="news-item">
+          <div>
+            <span class="tag tag-success">创业创新</span>
+            <a href="https://hrss.shandong.gov.cn/articles/ch00354/202604/a27f0079-267a-47df-84ae-edd6b56bea01.shtml" class="news-link" target="_blank">《关于推动灵活就业"向新向智向优向高"健康发展的行动方案》（2026年4月）</a>
+          </div>
+          <div class="news-source">落实党的二十届四中全会部署，推动灵活就业向新业态、智能化、高技能、高质量方向发展，为金融业灵活用工机制改革提供政策依据。<br>来源：<a href="https://hrss.shandong.gov.cn/articles/ch00354/202604/a27f0079-267a-47df-84ae-edd6b56bea01.shtml" target="_blank" class="src-link">山东省人社厅</a></div>
+        </li>
+      </ul>
+    </div>
+
+    <!-- 城市政策 -->
+    <div class="subsection">
+      <div class="subsection-title">5.2 重点城市动态</div>
+      <div class="table-wrapper">
+        <table>
+          <thead>
+            <tr>
+              <th>城市</th>
+              <th>政策重点</th>
+              <th>HR参考价值</th>
+              <th>来源</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr class="city-group"><td colspan="4">&#x1F4CD; 济南</td></tr>
+            <tr>
+              <td>济南</td>
+              <td>就业创业政策地图全面覆盖，高校毕业生就业服务持续强化；社保缴费基数按省统一执行</td>
+              <td>关注高校毕业生吸纳补贴政策，合理利用政策降低招聘成本</td>
+              <td><a href="https://hrss.shandong.gov.cn" target="_blank" class="src-link">省人社厅</a></td>
+            </tr>
+            <tr class="city-group"><td colspan="4">&#x1F4CD; 青岛</td></tr>
+            <tr>
+              <td>青岛</td>
+              <td>青岛自贸区金融人才政策持续，对金融行业高端人才有专项补贴；青岛证监局合规监管趋严</td>
+              <td>关注青岛证监局动态，确保辖区合规；自贸区人才引进政策可用于高端金融人才吸引</td>
+              <td><a href="http://www.csrc.gov.cn" target="_blank" class="src-link">证监会青岛局</a></td>
+            </tr>
+            <tr class="city-group"><td colspan="4">&#x1F4CD; 烟台</td></tr>
+            <tr>
+              <td>烟台</td>
+              <td>烟台人社局推进企业稳岗扩就业，高技能人才补贴政策延续</td>
+              <td>申请稳岗补贴，减轻人力成本负担；关注技能人才培训补贴</td>
+              <td>烟台市人社局</td>
+            </tr>
+            <tr class="city-group"><td colspan="4">&#x1F4CD; 临沂 / 莱阳 / 潍坊</td></tr>
+            <tr>
+              <td>临沂</td>
+              <td>临沂市推进"返乡创业"和"本土人才"政策，金融人才回流政策有所强化</td>
+              <td>结合本地校招，借助政策吸引金融专业毕业生留临就业</td>
+              <td>临沂市人社局</td>
+            </tr>
+            <tr>
+              <td>莱阳</td>
+              <td>莱阳（烟台辖区）执行烟台市统一社保政策；本地就业政策重点支持制造业，金融岗位相对有限</td>
+              <td>合理利用省级政策，针对性开展人才招募</td>
+              <td>莱阳市人社局</td>
+            </tr>
+            <tr>
+              <td>潍坊</td>
+              <td>潍坊2026年持续推进"优才引凤"人才工程，金融类人才纳入支持范围</td>
+              <td>关注人才引进补贴申报，降低高学历人才引进成本</td>
+              <td>潍坊市人社局</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </div>
+
+  <!-- ==================== 第六部分：HR建议 ==================== -->
+  <div class="section" id="section-suggestions">
+    <h2 class="section-title"><span class="icon">陆</span>HR工作建议</h2>
+    <p style="font-size:13px;color:var(--text-light);margin-bottom:20px;">基于本周行业动态、监管政策及人才市场变化，提出以下人力资源工作建议：</p>
+    <ul class="suggestion-list">
+      <li class="suggestion-item">
+        <div class="suggestion-num">1</div>
+        <div class="suggestion-text">
+          <h4>把握薪酬制度改革窗口期，提前做好人才保留预案</h4>
+          <p>中信证券、国泰海通、中信建投、招商证券等头部券商集中披露薪酬追索扣回新规，追索期限原则上与风险损失期限一致，且覆盖离职退休人员。这将影响部分高收益预期员工的求职意愿，建议人力部门提前摸排本司敏感岗位员工稳定性，针对性开展薪酬沟通与保留工作，同时可适时从竞争对手挖引因薪酬不适应新制度而松动的优质人才。</p>
+        </div>
+      </li>
+      <li class="suggestion-item">
+        <div class="suggestion-num">2</div>
+        <div class="suggestion-text">
+          <h4>积极对接私募新规，布局私募从业人员转型培训</h4>
+          <p>国务院私募基金顶层设计出台，18项措施显著提高合规门槛，预计将有部分私募机构注销或降规模，从业人员转型至公募、券商的需求增加。建议人力部门关注私募转岗人才，针对基金投顾、财富管理等方向提前储备人才，同时对现有员工开展私募监管新规解读培训，防范因客户为私募机构而引发的合规风险。</p>
+        </div>
+      </li>
+      <li class="suggestion-item">
+        <div class="suggestion-num">3</div>
+        <div class="suggestion-text">
+          <h4>抓住基金投顾转常规机遇，培育买方投顾专业队伍</h4>
+          <p>基金投顾试点转常规进入倒计时，"ETF+投顾"成为券商财富管理转型核心方向。建议加快推进投顾资质培训考核计划，优先为有意愿的客户经理提供投顾执照考取支持，同时建立基金投顾专项激励机制，将资产保有量和投顾服务质量纳入绩效考核，形成区别于传统销售导向的新型财富管理人才梯队。</p>
+        </div>
+      </li>
+      <li class="suggestion-item">
+        <div class="suggestion-num">4</div>
+        <div class="suggestion-text">
+          <h4>借助光大证券撤出山东的窗口，定向引进优质从业人员</h4>
+          <p>光大证券撤销山东分公司已确认（1月公告），经过近半年时间，相关人员流向已逐渐清晰。建议人力部门主动出击，通过猎聘、直招等渠道精准接触光大证券原山东分公司的优质客户经理和管理人员，重点关注具有山东本地客户资源的中高级从业者，作为快速补充网点战斗力的有效来源。</p>
+        </div>
+      </li>
+      <li class="suggestion-item">
+        <div class="suggestion-num">5</div>
+        <div class="suggestion-text">
+          <h4>积极利用山东省就业创业政策地图，优化招聘用人成本</h4>
+          <p>山东省教育厅、人社厅联合发布2026年就业创业政策地图，覆盖吸纳就业补贴、见习补贴、职业培训补贴等8大类政策。建议人力部门深入研究政策细则，在合规前提下将高校毕业生吸纳补贴、见习补贴纳入校园招聘方案中的成本测算，在济南、青岛、烟台等城市重点落地，实现用人成本优化。</p>
+        </div>
+      </li>
+      <li class="suggestion-item">
+        <div class="suggestion-num">6</div>
+        <div class="suggestion-text">
+          <h4>强化反洗钱合规培训，防范东吴证券式监管风险</h4>
+          <p>东吴证券因客户尽职调查和可疑交易报告不规范被央行处以74.3万元罚款，警示证券行业反洗钱合规的重要性。建议人力部门配合合规部门，将反洗钱操作规范纳入新员工入职培训及年度合规培训必修课，尤其针对客户经理、营销岗位员工，确保操作规范到位，降低合规处罚风险及由此引发的声誉影响。</p>
+        </div>
+      </li>
+      <li class="suggestion-item">
+        <div class="suggestion-num">7</div>
+        <div class="suggestion-text">
+          <h4>关注VIP交易通道整改对高净值客户维护团队的影响</h4>
+          <p>三大交易所要求3个月内整改VIP专属交易通道，直接影响到部分以高频/速度优势服务机构客户的客户经理及交易支持岗位的职能定位。建议人力部门与业务条线联动，评估通道整改后相关岗位职责变化，提前规划岗位转型方向（如向投顾、资产配置方向转型），避免因业务模式调整引发人员适应困难和被动离职。</p>
+        </div>
+      </li>
+    </ul>
+  </div>
+
+  <!-- ==================== 报告尾部 ==================== -->
+  <div class="report-footer" style="margin-top:32px; border-top:2px solid var(--border); padding:24px 20px;">
+    <h4 style="color:var(--primary); font-size:14px; margin-bottom:10px;">&#128203; 数据说明</h4>
+    <p style="font-size:12px; color:var(--text-light); line-height:1.8; margin-bottom:16px;">本报告基于公开网络信息采集编制，数据来源包括证监会官网、中证协官网（<a href="https://www.sac.net.cn" target="_blank" class="src-link">sac.net.cn</a>）、山东证监局（<a href="http://www.csrc.gov.cn/shandong/" target="_blank" class="src-link">csrc.gov.cn/shandong</a>）、山东省人社厅（<a href="https://hrss.shandong.gov.cn" target="_blank" class="src-link">hrss.shandong.gov.cn</a>）、证券日报、财联社、新浪财经、东方财富、中国基金报、华泰证券官网（<a href="https://www.htsc.com.cn" target="_blank" class="src-link">htsc.com.cn</a>）等；招聘信息来源于猎聘（<a href="https://www.liepin.com" target="_blank" class="src-link">liepin.com</a>）、BOSS直聘及各券商官网。</p>
+    <h4 style="color:var(--accent); font-size:14px; margin-bottom:10px;">&#9888;&#65039; 免责声明</h4>
+    <p style="font-size:12px; color:var(--text-light); line-height:1.8; margin-bottom:0;">本报告为华泰证券山东分公司人力资源内部参考材料，所引用信息仅供参考，不构成任何投资决策依据。报告内容基于截至2026年6月7日的公开信息编制，如有信息滞后或偏差，请以官方公告为准。</p>
+  </div>
+
+</div>
+
+<script>
+(function() {
+  var navItems = document.querySelectorAll('.nav-item[data-section]');
+  var sections = [];
+  navItems.forEach(function(item) {
+    var id = item.getAttribute('data-section');
+    var el = document.getElementById(id);
+    if (el) sections.push({ id: id, el: el, nav: item });
+  });
+  function updateNav() {
+    var navHeight = document.getElementById('navBar').offsetHeight;
+    var current = sections[0];
+    for (var i = 0; i < sections.length; i++) {
+      var rect = sections[i].el.getBoundingClientRect();
+      if (rect.top <= navHeight + 60) current = sections[i];
+    }
+    navItems.forEach(function(item) { item.classList.remove('active'); });
+    if (current) current.nav.classList.add('active');
+  }
+  var ticking = false;
+  window.addEventListener('scroll', function() {
+    if (!ticking) { window.requestAnimationFrame(function() { updateNav(); ticking = false; }); ticking = true; }
+  });
+  updateNav();
+})();
+</script>
+</body>
+</html>
